@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Table</title>
+    <style>
+        #customar,
+        tr,
+        td,
+        th {
+            border: 5px solid black;
+            width: 70%;
+            height: 100%;
+            border-collapse: collapse;
+
+
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #cf4141;
+        }
+
+        #customers tr:hover {
+            background-color: rgb(88, 41, 41);
+        }
+        #customers tr:hover {
+            background-color: #f2f2f2;
+        }
+        
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">Home</a>
+    <br>
+    <h1>A Fancy Table</h1>
+    <table id="customers">
+        <tr>
+            <th>Company</th>
+            <th>Contuct</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Anjana Enterprise</td>
+            <td>Arun Kr. Jaswal</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Tisha Agency</td>
+            <td>Arvind panay</td>
+            <td>Howra</td>
+        </tr>
+        <tr>
+            <td>Sujata PVT.LTD.</td>
+            <td>B.N.Majumder</td>
+            <td>Midnapore</td>
+        </tr>
+        <tr>
+            <td>Advanced Enzymes </td>
+            <td>Alex lees</td>
+            <td>Garmany</td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
