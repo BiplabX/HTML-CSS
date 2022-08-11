@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        div.static {
+            position: static;
+            border: 3px solid green;
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            border: 3px solid green;
+        }
+
+        div.static {
+            position: static;
+            border: 3px solid green;
+        }
+
+        div.relative {
+            position: relative;
+            left: 30px;
+            border: 3px solid green;
+        }
+
+        div.sticky {
+            position: absolute;
+            bottom: top;
+            border: 3px solid green;
+        }
+
+        div#ex1 {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73AD21;
+        }
+
+        div#ex2 {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html">Home</a>
+
+    <h2>position: static;</h2>
+
+    <p>An element with position: static; is not positioned in any special way; it is always positioned according to the
+        normal flow of the page:</p>
+
+    <div class="static">
+        This div element has position: static;
+    </div> <br>
+    <div class="fixed">This element is fixed.</div>
+    <br><br>
+    <div class="static">This position is static.</div>
+    <br>
+    <div class="relative">This element is Reletive</div>
+    <br>
+    <div class="sticky">This element is stikcy</div>
+
+    <span>
+
+
+
+        <h2>position: absolute;</h2>
+
+        <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+            positioned relative to the viewport, like fixed):</p>
+
+        <div class="relative" id="ex1">This div element has position: relative;
+            <div class="absolute" id="ex2">This div element has position: absolute;</div>
+        </div>
+
+
+
+    </span>
+
+</body>
+
+</html>
